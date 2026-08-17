@@ -1,0 +1,14 @@
+interface:
+  display_name: Issue to Main
+  short_description: "\u4ECE GitHub Issue \u7ECF worktree\u3001CI \u81EA\u4FEE\u590D\
+    \u5230\u81EA\u52A8\u5408\u5E76\u548C\u5173\u95ED"
+  default_prompt: Implement the specified GitHub issue end-to-end using the issue-to-main
+    workflow. Do not finish until required CI passes, the PR is merged, the issue
+    is closed, and the worktree is cleaned up.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

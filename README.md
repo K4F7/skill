@@ -6,6 +6,24 @@ Skills 遵循 [Agent Skills](https://agentskills.io/) 格式。
 
 [![skills.sh](https://skills.sh/b/K4F7/skill)](https://skills.sh/K4F7/skill)
 
+## Available Skills
+
+### issue-to-main
+
+从最新 `origin/main` 开隔离 worktree，实现已有 GitHub Issue，本地验证后开 PR，等必需 CI、失败则在同一 worktree 修复，开启 auto-merge，确认 PR 已合入且 issue 已关闭，再清理 worktree 和分支。
+
+**Use when:**
+
+- `implement issue #123`
+- 把一个 issue 做到 PR 合入并关闭
+- 使用 worktree PR 流程
+
+**Requires:** 本地 `git`、`gh`，仓库默认分支为 `main`。
+
+```bash
+npx skills add K4F7/skill --skill issue-to-main
+```
+
 ## 安装
 
 ```bash
